@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HydraMate App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>HydraMate</h1>
+        <nav>
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#features">Features</a></li>
+                <li><a href="#stats">Stats</a></li>
+                <li><a href="#settings">Settings</a></li>
+                <li><a href="#shop">Shop</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <section id="home" class="frame">
+        <h2>Welcome to HydraMate</h2>
+        <p>Smart hydration tracking made easy.</p>
+    </section>
+
+    <section id="features" class="frame">
+        <h2>Features</h2>
+        <ul>
+            <li>Hydration Tracking</li>
+            <li>UV-Cleaning System</li>
+            <li>Bluetooth Connectivity</li>
+            <li>LED Hydration Alerts</li>
+        </ul>
+    </section>
+
+    <section id="stats" class="frame">
+        <h2>Hydration Stats</h2>
+        <canvas id="hydrationChart"></canvas>
+    </section>
+
+    <section id="settings" class="frame">
+        <h2>Settings</h2>
+        <label for="notifications">Hydration Reminders:</label>
+        <input type="checkbox" id="notifications" onchange="toggleNotifications()">
+    </section>
+
+    <script src="main.js"></script>
+</body>
+</html>
